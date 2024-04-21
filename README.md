@@ -19,7 +19,7 @@ aestishot.sh [options] <image1> <image2> ....<imageN>
 - `-p <padding>`: Sets the padding size for the gradient background (default: 80).
 - `-r <radius>`: Sets the corner radius for the output image (default: 20).
 - `-a <angle>`: Sets the angle to rotate the output image by (default: 9).
-- `-t <png|jpeg|...|tiff>`: Sets the file format for the output image (default: png). **CAUTION:** JPEG might not work very well.
+- `-t <png|jpeg|...|tiff>`: Sets the file format for the output image (default: png).
 - `-o <file Name>`: Sets the name of the output file (default: output.png).
 - `-gf <color>`: Specifies the gradient from-color (default: generated from the first supplied image).
 - `-gt <color>`: Specifies the gradient to-color (default: generated from the last supplied image).
@@ -42,7 +42,6 @@ Technically, the script performs the following steps:
 
 ## Caveats
 - The script works best with images of similar dimensions.
-- The script may not work well with JPEG images.
 - This script may reduce the quality of the images as we are doing rotations
 without clipping which add extra padding and then removing that padding. ( I
 tired with python Pillow and openCV the quality was similar to that one)
